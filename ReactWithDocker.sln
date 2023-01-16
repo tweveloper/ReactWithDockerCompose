@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{18A671E1-B625-40BC-B282-DF5D6F7AFE79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "react-application", "src\react-application\react-application.csproj", "{13E644D0-1265-4752-AF1F-F7064ECC0E62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microservices", "microservices", "{5C61E71C-8226-4D91-834B-941CF2504196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-api", "src\microservices\dotnet-api\dotnet-api.csproj", "{ACC02444-F0EC-49C4-98D3-ECA6980917A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13E644D0-1265-4752-AF1F-F7064ECC0E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E644D0-1265-4752-AF1F-F7064ECC0E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E644D0-1265-4752-AF1F-F7064ECC0E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E644D0-1265-4752-AF1F-F7064ECC0E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC02444-F0EC-49C4-98D3-ECA6980917A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC02444-F0EC-49C4-98D3-ECA6980917A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC02444-F0EC-49C4-98D3-ECA6980917A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC02444-F0EC-49C4-98D3-ECA6980917A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13E644D0-1265-4752-AF1F-F7064ECC0E62} = {18A671E1-B625-40BC-B282-DF5D6F7AFE79}
+		{5C61E71C-8226-4D91-834B-941CF2504196} = {18A671E1-B625-40BC-B282-DF5D6F7AFE79}
+		{ACC02444-F0EC-49C4-98D3-ECA6980917A1} = {5C61E71C-8226-4D91-834B-941CF2504196}
+	EndGlobalSection
+EndGlobal
