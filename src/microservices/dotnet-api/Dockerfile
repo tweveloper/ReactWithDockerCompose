@@ -6,10 +6,10 @@ COPY . ./
 # Restore as distinct layers
 RUN dotnet restore
 # Build and publish a release
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o src/microservices/dotnet-api/out
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 WORKDIR /src/microservices/dotnet-api
 COPY --from=build-env /src/microservices/dotnet-api/out .
 ENTRYPOINT ["dotnet", "dotnet-api.dll"]
